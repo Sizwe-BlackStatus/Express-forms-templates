@@ -1,0 +1,23 @@
+extends layout
+block content
+    p Thanks for the info! The following was saved to the database:
+    table(style='width:100%', border='5')
+        tr
+            th _id
+            th VisitorsName
+            th AssistantsName
+            th VisitorsAge
+            th Date_of_visit
+            th Time_of_visit
+            th Comments
+            
+        each i in data
+            tr
+            td= i._id
+            td= i.visitorName
+            td= i.assistantName
+            td= i.visitorAge
+            td= i.dateOfVisit
+            td= i.timeOfVisit
+            td= i.comments
+            
