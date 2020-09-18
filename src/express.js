@@ -59,3 +59,4 @@ app.get('/thankYou', (req, res) => {
 app.listen(4000, () => {
     console.log('Server started')
 })
+module.exports = {mongoose, addNewVisitor}
