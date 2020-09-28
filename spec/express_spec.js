@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const { addNewVisitor } = require("../src/express");
+const { addNewVisitorSchema } = require("../src/express");
 
 const visitorData = {
   visitorName: "Jason",
@@ -9,7 +9,7 @@ const visitorData = {
   timeOfVisit: "10:00",
   comments: "Thats Wowza!",
 };
-describe("addNewVisitorModel", () => {
+describe("addNewVisitorSchemaModel", () => {
   beforeEach((done) => {
     mongoose.connect(
       "mongodb://localhost:27017/Visitors",
@@ -24,7 +24,7 @@ describe("addNewVisitorModel", () => {
     });
   });
   it("should have visitors data saved", async () => {
-    const newVisitor = new addNewVisitor(visitorData);
+    const newVisitor = new addNewVisitorSchema(visitorData);
     const newVisitorSaved = await newVisitor.save();
     expect(newVisitorSaved._id).toBeDefined();
     expect(newVisitorSaved.visitorName).toBe(newVisitor.visitorName);

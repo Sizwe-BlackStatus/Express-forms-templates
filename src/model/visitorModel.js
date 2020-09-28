@@ -21,4 +21,4 @@ let visitorSchema = mongoose.Schema({
         type: String
     },
 })
-const addNewVisitor = module.exports = mongoose.model('addNewVisitor', visitorSchema)
+const addNewVisitorSchema = module.exports = mongoose.model('addNewVisitorSchema', visitorSchema)
