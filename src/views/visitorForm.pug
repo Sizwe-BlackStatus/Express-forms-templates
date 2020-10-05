@@ -1,0 +1,25 @@
+extends layout
+
+block content
+    h1 #{title}
+    form(action="/new_visit", method='POST')
+        label Visitors_name: 
+        input(type="text" name="visitorName" required)
+        br
+        label Assistants_name:
+        input(type="text" name="assistantName" required)
+        br
+        label Visitors_age:
+        input(type="text" name="visitorAge" required)
+        br
+        label Visitation_date:
+        input(type="text" name="dateOfVisit" required)
+        br
+        label Visitation_time:
+        input(type="text" name="timeOfVisit" required)
+        br
+        label Comments:
+        input(type="text" name="comments" required)
+        br
+        button Submit
+        

@@ -1,0 +1,27 @@
+{
+  "name": "sizwezakhe-masemola-279-express-forms-and-templates-",
+  "version": "1.0.0",
+  "description": "Express, forms and templates (279) For raw project instructions see: https://raw.githubusercontent.com/Umuzi-org/tech-department/master/content/projects/nodejs/express-forms/_index.md",
+  "main": "dbConnect.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Umuzi-org/Sizwezakhe-Masemola-279-express-forms-and-templates-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Umuzi-org/Sizwezakhe-Masemola-279-express-forms-and-templates-/issues"
+  },
+  "homepage": "https://github.com/Umuzi-org/Sizwezakhe-Masemola-279-express-forms-and-templates-#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "jasmine": "^3.6.1",
+    "mongoose": "^5.10.5",
+    "nodemon": "^2.0.4",
+    "pug": "^3.0.0"
+  }
+}
